@@ -5,10 +5,11 @@ import NavMenu from './NavMenu';
 import logo from '../public/img/Nuxdsgn.svg';
 import Image from 'next/image';
 
-export default function Navbar() {
+export default function Navbar(): JSX.Element {
     return (
-        <div className=" flex gap-11 mx-8 items-center justify-between ">
-            <div className="">
+        <div className="flex gap-11 mx-8 items-center justify-between">
+            {/* Social Media Icons */}
+            <div className="flex gap-4">
                 <SocialIcon
                     url="https://www.instagram.com/ferdiyan"
                     fgColor="gray"
@@ -25,32 +26,26 @@ export default function Navbar() {
                     bgColor="transparent"
                 />
             </div>
+
+            {/* Navigation Menu */}
             <div className="flex items-center justify-center gap-8">
-                <NavMenu href="#about" className="heroButton">
-                    Home
-                </NavMenu>
-                <NavMenu href="#about" className="heroButton">
-                    Service
-                </NavMenu>
-                <NavMenu href="#about" className="heroButton">
-                    Project
-                </NavMenu>
+                <NavMenu href="#home">Home</NavMenu>
+                <NavMenu href="#services">Service</NavMenu>
+                <NavMenu href="#projects">Project</NavMenu>
+
+                {/* Logo */}
                 <Image
                     src={logo}
-                    className="h-6 mx-10 flex items-center  text-black"
-                ></Image>
+                    className="h-6 mx-10 flex items-center"
+                    alt="logo"
+                />
 
-                <NavMenu href="#about" className="heroButton">
-                    Testimonials
-                </NavMenu>
-                <NavMenu href="#about" className="heroButton">
-                    Blog
-                </NavMenu>
-                <NavMenu href="#about" className="heroButton">
-                    Contact
-                </NavMenu>
+                <NavMenu href="#testimonials">Testimonials</NavMenu>
+                <NavMenu href="#blog">Blog</NavMenu>
+                <NavMenu href="#contact">Contact</NavMenu>
             </div>
 
+            {/* Collaborate Button */}
             <div>
                 <Collaborate />
             </div>

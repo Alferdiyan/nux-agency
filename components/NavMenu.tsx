@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import Link from 'next/link';
 
-export default function NavMenu({ href, children }) {
+interface NavMenuProps {
+    href: string;
+    children: ReactNode;
+}
+
+export default function NavMenu({ href, children }: NavMenuProps): JSX.Element {
     return (
         <div>
-            <a href={href}>
+            <Link href={href}>
                 <button className="heroButton gap-x-1 hover:text-orange-400">
                     {children}
                 </button>
-            </a>
+            </Link>
         </div>
     );
 }
