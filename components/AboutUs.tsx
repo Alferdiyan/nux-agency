@@ -18,12 +18,20 @@ export default function AboutUs() {
             <div className="pt-[89px]">
                 <h1 className="font-clash-display ">04/ About Us</h1>
                 <h1 className="text-[56px] font-semibold font-clash-display uppercase">
-                    Collaborate between <br /> systems thinking and good <br />{' '}
+                    Collaborate between <br /> systems thinking and good <br />
                     craftsmanship.
                 </h1>
             </div>
             <div className="flex gap-6 justify-evenly">
-                <Image
+                {[photo4, photo1, photo2, photo3].map((photo, index) => (
+                    <Image
+                        key={index}
+                        className="h-58 w-56 filter grayscale"
+                        src={photo}
+                        alt={`Team member ${index + 1}`}
+                    />
+                ))}
+                {/* <Image
                     className="h-58 w-56 filter grayscale"
                     src={photo4}
                 ></Image>
@@ -38,7 +46,7 @@ export default function AboutUs() {
                 <Image
                     className="h-58  w-56 filter grayscale"
                     src={photo3}
-                ></Image>
+                ></Image> */}
             </div>
             <div className="flex justify-center font-clash-display pt-[72px]">
                 <button className=" border text-base font-semibold rounded-3xl px-4 py-2 bg-white hover:bg-slate-900 text-black hover:text-white">

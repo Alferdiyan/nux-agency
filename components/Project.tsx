@@ -18,7 +18,8 @@ export default function Project() {
                     <p className="text-lg max-w-[443px] font-semibold">
                         Only full-service thinking can lead to progress.
                         <br />
-                        We've developed a company that covers the entire <br />
+                        We&apos;ve developed a company that covers the entire{' '}
+                        <br />
                         customer experience, concentrating on internet <br />
                         usage and the effects that each touchpoint has on <br />
                         your brand.

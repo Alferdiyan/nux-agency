@@ -18,8 +18,8 @@ export default function Testimonials() {
             {/* Testimonials  */}
             <div>
                 <p className="pt-[108px] font-semibold uppercase text-2xl text-[#FAFF00]">
-                    “ I'm happy that I chose NUX to help me create a website for
-                    company's and mobile apps.
+                    “ I&apos;m happy that I chose NUX to help me create a
+                    website for company&apos;s and mobile apps.
                     <span className="text-white ">
                         They did a fantastic job quickly putting the site
                         together. Cryses and his colleagues are incredibly
