@@ -6,7 +6,7 @@ export default function Footer() {
         <div className="py-[116px] font-clash-display ">
             <div className="flex flex-col justify-center items-center">
                 <div className="text-[139px] font-bold border flex flex-col justify-center items-center ">
-                    <p className="p-0">Let&apos;s work</p>
+                    <p className="p-0">Let&lsquo;s work</p>
                     <p className=""> together</p>
                     <p className=""> Lets Creative</p>
                 </div>
@@ -21,7 +21,7 @@ export default function Footer() {
                 <div>
                     <div>
                         <p>
-                            Would you like to work with us? Let&apos;s! work
+                            Would you like to work with us? Let&lsquo;s! work
                             together
                         </p>
                     </div>
